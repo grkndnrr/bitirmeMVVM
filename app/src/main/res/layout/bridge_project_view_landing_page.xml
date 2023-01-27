@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:foreground="#00000000"
+            app:cardElevation="@dimen/cardview_default_radius">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+
+                    android:id="@+id/imageView"
+                    android:layout_width="330dp"
+                    android:layout_height="182dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.506"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+
+                    card_view:srcCompat="@drawable/recyclerviewtemplate" />
+
+                <TextView
+                    android:id="@+id/textViewGrupNo"
+                    android:layout_width="47dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="1.Grup"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonOdev1"
+                    app:layout_constraintStart_toStartOf="@+id/buttonOdev1" />
+
+                <TextView
+                    android:id="@+id/textViewGrupKonu"
+                    android:layout_width="174dp"
+                    android:layout_height="20dp"
+
+                    android:text="Grup Konusu"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewGrupNo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.062"
+                    app:layout_constraintStart_toEndOf="@+id/textViewGrupNo"
+                    app:layout_constraintTop_toTopOf="@+id/textViewGrupNo"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/buttonOdev1"
+                    android:layout_width="79dp"
+                    android:layout_height="38dp"
+                    android:backgroundTint="#C4C66B6B"
+                    android:text="1. ödevin konusu"
+                    android:textSize="7dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.192"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.395" />
+
+                <Button
+                    android:id="@+id/buttonOdev2"
+                    android:layout_width="79dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="37dp"
+
+                    android:backgroundTint="#C4C66B6B"
+                    android:text="2. ödevin konusu"
+                    android:textSize="7dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.43"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.395" />
+
+                <Button
+                    android:id="@+id/buttonOdev3"
+                    android:layout_width="79dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="120dp"
+                    android:backgroundTint="#C4C66B6B"
+
+                    android:text="3.Ödevin konusu"
+                    android:textSize="7dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.668"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.395" />
+
+                <Button
+                    android:id="@+id/buttonGaleri1"
+                    android:layout_width="33dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text=""
+                    app:icon="@drawable/ic_baseline_add_photo_alternate_24"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="0dp"
+                    app:iconSize="36dp"
+                    app:layout_constraintEnd_toEndOf="@+id/buttonOdev1"
+                    app:layout_constraintStart_toStartOf="@+id/buttonOdev1"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonOdev1" />
+
+                <Button
+                    android:id="@+id/buttonGaleri2"
+                    android:layout_width="33dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="Button"
+                    app:icon="@drawable/ic_baseline_add_photo_alternate_24"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="0dp"
+                    app:iconSize="36dp"
+                    app:layout_constraintEnd_toEndOf="@+id/buttonOdev2"
+                    app:layout_constraintStart_toStartOf="@+id/buttonOdev2"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonOdev2" />
+
+                <Button
+                    android:id="@+id/buttonGaleri3"
+                    android:layout_width="33dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="Button"
+                    app:icon="@drawable/ic_baseline_add_photo_alternate_24"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="0dp"
+                    app:iconSize="36dp"
+                    app:layout_constraintEnd_toEndOf="@+id/buttonOdev3"
+                    app:layout_constraintStart_toStartOf="@+id/buttonOdev3"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonOdev3" />
+
+                <TextView
+                    android:id="@+id/textViewOgrenciNo1"
+                    android:layout_width="55dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="3dp"
+                    android:inputType="number"
+                    android:text="182503021"
+                    android:textAlignment="center"
+                    android:textColor="#323232"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/buttonGaleri1"
+                    app:layout_constraintHorizontal_bias="0.545"
+                    app:layout_constraintStart_toStartOf="@+id/buttonGaleri1"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonGaleri1"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textViewOgrenciNo2"
+                    android:layout_width="55dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="3dp"
+                    android:text="182503021"
+                    android:textAlignment="center"
+                    android:textColor="#323232"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/buttonGaleri2"
+                    app:layout_constraintHorizontal_bias="0.545"
+                    app:layout_constraintStart_toStartOf="@+id/buttonGaleri2"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonGaleri2"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textViewOgrenciNo3"
+                    android:layout_width="55dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="3dp"
+                    android:inputType="number"
+                    android:text="182503021"
+                    android:textAlignment="center"
+                    android:textColor="#323232"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/buttonGaleri3"
+                    app:layout_constraintHorizontal_bias="0.59"
+                    app:layout_constraintStart_toStartOf="@+id/buttonGaleri3"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonGaleri3"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageButton
+                    android:id="@+id/buttonDelete"
+                    android:layout_width="23dp"
+                    android:layout_height="24dp"
+                    android:alpha="1"
+                    android:background="#00000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.683"
+                    card_view:srcCompat="@android:drawable/ic_menu_delete"
+                    tools:layout_editor_absoluteX="341dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
